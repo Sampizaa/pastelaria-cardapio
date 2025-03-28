@@ -1,42 +1,70 @@
-Relatório de Desenvolvimento - Landing Page "Pastelaria do Seu Zé"
+Pastelaria do Seu Zé - Landing Page
+GitHub last commit
+GitHub repo size
 
-1. Estrutura do Projeto
+Landing page desenvolvida para a Pastelaria do Seu Zé, apresentando o cardápio de forma responsiva e interativa.
 
-A aplicação foi estruturada React e Next.js, dividindo a interface em componentes reutilizáveis. Os principais componentes desenvolvidos foram:
+🛠 Tecnologias Utilizadas
+React
 
-Home.js: Estrutura principal da página, contendo o cabeçalho e o menu.
+Next.js
 
-Menu.js: Renderiza dinamicamente a lista de itens do cardápio.
+CSS Modules
 
-PastelItem.js: Componente para exibir cada item do cardápio, recebendo props como nome, imagem, preço e status de disponibilidade.
+✨ Funcionalidades
+Exibição do cardápio com produtos
 
-2. Uso de Props e Renderização Condicional
+Visualização de itens esgotados
 
-Foi adotada a abordagem de props para tornar os componentes reutilizáveis e flexíveis. O atributo esgotado foi incluído nos itens do menu, permitindo alterar dinamicamente a aparência dos produtos indisponíveis, deixando:
+Design responsivo para todos os dispositivos
 
-O nome riscado (text-decoration: line-through)
+🏗 Estrutura do Projeto
+A aplicação foi estruturada com componentes reutilizáveis:
 
-A imagem em preto e branco (filter: grayscale(100%))
+Copy
+src/
+├── components/
+│   ├── Home.js       # Estrutura principal da página
+│   ├── Menu.js       # Renderiza a lista de itens do cardápio
+│   └── PastelItem.js # Componente para cada item do cardápio
+├── styles/          # Estilos CSS modularizados
+└── pages/           # Rotas da aplicação
+🔍 Principais Características
+Props e Renderização Condicional
+Componentes flexíveis e reutilizáveis via props
 
-3. Estilização e Responsividade
+Tratamento especial para itens esgotados:
 
-O CSS foi escrito de forma modularizada, garantindo que o layout fosse responsivo.
-As principais decisões incluem:
+Nome riscado (text-decoration: line-through)
 
-Flexbox e Grid para organização do layout.
+Imagem em preto e branco (filter: grayscale(100%))
 
-Media Queries para adaptar o menu a diferentes tamanhos de tela:
+📱 Responsividade
+Layout adaptável usando Flexbox e Grid
 
-Desktop: 4 colunas
+Media Queries para diferentes tamanhos de tela:
 
-Tablet: 3 colunas
+🖥 Desktop: 4 colunas
 
-Celular médio: 2 colunas
+📱 Tablet: 3 colunas
 
-Celular pequeno: 1 coluna
+📱 Celular médio: 2 colunas
 
-Ajuste no espaçamento para evitar elementos colados ou desproporcionais em diferentes resoluções.
+📱 Celular pequeno: 1 coluna
 
-4. Conclusão
+🚀 Como Executar
+Clone o repositório
 
-O desenvolvimento seguiu princípios de componentização, reutilização de código e responsividade, garantindo uma interface amigável e funcional para o cardápio da pastelaria. O projeto pode ser expandido para incluir novas funcionalidades, conforme necessidade.
+bash
+Copy
+git clone https://github.com/seu-usuario/pastelaria-do-seu-ze.git
+Instale as dependências
+
+bash
+Copy
+npm install
+Inicie o servidor de desenvolvimento
+
+bash
+Copy
+npm run dev
