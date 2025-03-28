@@ -1,5 +1,7 @@
 # Relatório de Desenvolvimento - Landing Page "Pastelaria do Seu Zé"
 
+![Print do site](public/print.jpg)
+
 ## Estrutura do Projeto
 A aplicação foi estruturada utilizando React e Next.js, dividindo a interface em componentes reutilizáveis. Os principais componentes desenvolvidos foram:
 
