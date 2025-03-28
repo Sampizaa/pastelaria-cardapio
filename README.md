@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Relatório de Desenvolvimento - Landing Page "Pastelaria do Seu Zé"
 
-## Getting Started
+1. Estrutura do Projeto
 
-First, run the development server:
+A aplicação foi estruturada React e Next.js, dividindo a interface em componentes reutilizáveis. Os principais componentes desenvolvidos foram:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Home.js: Estrutura principal da página, contendo o cabeçalho e o menu.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Menu.js: Renderiza dinamicamente a lista de itens do cardápio.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+PastelItem.js: Componente para exibir cada item do cardápio, recebendo props como nome, imagem, preço e status de disponibilidade.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Uso de Props e Renderização Condicional
 
-## Learn More
+Foi adotada a abordagem de props para tornar os componentes reutilizáveis e flexíveis. O atributo esgotado foi incluído nos itens do menu, permitindo alterar dinamicamente a aparência dos produtos indisponíveis, deixando:
 
-To learn more about Next.js, take a look at the following resources:
+O nome riscado (text-decoration: line-through)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A imagem em preto e branco (filter: grayscale(100%))
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Estilização e Responsividade
 
-## Deploy on Vercel
+O CSS foi escrito de forma modularizada, garantindo que o layout fosse responsivo.
+As principais decisões incluem:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Flexbox e Grid para organização do layout.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Media Queries para adaptar o menu a diferentes tamanhos de tela:
+
+Desktop: 4 colunas
+
+Tablet: 3 colunas
+
+Celular médio: 2 colunas
+
+Celular pequeno: 1 coluna
+
+Ajuste no espaçamento para evitar elementos colados ou desproporcionais em diferentes resoluções.
+
+4. Conclusão
+
+O desenvolvimento seguiu princípios de componentização, reutilização de código e responsividade, garantindo uma interface amigável e funcional para o cardápio da pastelaria. O projeto pode ser expandido para incluir novas funcionalidades, conforme necessidade.
