@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.header {
+    color: saddlebrown;
+    background-color: #F2EFDC;
+    border: 8px solid #F2E5A0;
+    outline: 4px solid #D9D16A;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 80%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.header img {
+    width: 50px;
+    height: auto;
+    padding-bottom: 18px;
+}
