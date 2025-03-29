@@ -5,7 +5,7 @@
 ## Estrutura do Projeto
 A aplicação foi estruturada utilizando React e Next.js, dividindo a interface em componentes reutilizáveis. Os principais componentes desenvolvidos foram:
 
-- **Home.js**: Estrutura principal da página, contendo o cabeçalho e o menu.
+- **Page.js**: Estrutura principal da página, contendo o cabeçalho e o menu.
 - **Menu.js**: Renderiza dinamicamente a lista de itens do cardápio.
 - **PastelItem.js**: Componente para exibir cada item do cardápio, recebendo props como nome, imagem, preço e status de disponibilidade.
 
