@@ -2,6 +2,9 @@
 
 ![Print do site](public/print.jpg)
 
+## Site publicado no VERCEL
+https://pastelaria-cardapio.vercel.app/
+
 ## Estrutura do Projeto
 A aplicação foi estruturada utilizando React e Next.js, dividindo a interface em componentes reutilizáveis. Os principais componentes desenvolvidos foram:
 
